@@ -8,4 +8,5 @@ export const r2 = new S3Client({
     accessKeyId: env.CLOUDFLARE_ACCESS_KEY_ID,
     secretAccessKey: env.CLOUDFLARE_SECRET_ACCESS_ID,
   },
+  requestChecksumCalculation: "WHEN_REQUIRED",
 });
