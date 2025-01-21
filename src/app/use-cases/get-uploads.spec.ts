@@ -6,7 +6,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getUploads } from "./get-uploads";
 
 describe("Get uploads", () => {
-  // Exclui os dados do banco de teste antes de realizar os testes
+  // Exclui os dados do banco de teste antes de realizar cada teste
   beforeEach(async () => {
     await db.delete(schemas.uploads);
   });
