@@ -38,5 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Setup DB environment
+        run: db:generate
+        run: db:migrate:test
+
       - name: Run tests
         run: npm run test
